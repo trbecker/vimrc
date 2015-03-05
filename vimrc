@@ -7,6 +7,8 @@ let mapleader=","
 
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
+nmap <silent> <leader>o :bn<CR>
+nmap <silent> <leader>p :bp<CR>
 
 set hidden
 
@@ -37,7 +39,7 @@ if has('autocmd')
 endif
 
 if &t_Co >= 256 || has('gui_running')
-	colorscheme cthulhian
+	colorscheme ir_black
 endif
 
 if &t_Co > 2 || has('gui_running')
@@ -57,6 +59,5 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 nmap <silent> ,/ :nohlsearch<CR>
-
 
 
