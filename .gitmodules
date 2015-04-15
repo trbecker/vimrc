@@ -4,3 +4,12 @@
 [submodule "bundle/-stl-syntax"]
 	path = bundle/-stl-syntax
 	url = https://github.com/Mizuchi/STL-Syntax.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/vimtex"]
+	path = bundle/vimtex
+	url = https://github.com/lervag/vimtex.git
+[submodule "bundle/haskell-vim"]
+	path = bundle/haskell-vim
+	url = https://github.com/raichoo/haskell-vim.git

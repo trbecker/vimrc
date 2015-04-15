@@ -7,13 +7,14 @@ let mapleader=","
 
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
-nmap <silent> <leader>o :bn<CR>
-nmap <silent> <leader>p :bp<CR>
+nmap <silent> ( :bn<CR>
+nmap <silent> ) :bp<CR>
 
 set hidden
 
 set nowrap
 set tabstop=4
+set expandtab
 set autoindent
 set copyindent
 set number
@@ -31,7 +32,11 @@ set visualbell
 set noerrorbells
 set nobackup
 set noswapfile
+set t_Co=256
+set bs=2
 
+
+filetype on
 filetype plugin indent on
 
 if has('autocmd')
@@ -47,7 +52,7 @@ if &t_Co > 2 || has('gui_running')
 endif
 
 set list
-set listchars=tab:>.,extends:#,nbsp:.,nbsp:.
+set listchars=tab:››,trail:×,precedes:<,extends:>
 autocmd filetype html,xml set listchars-=tab:>.
 
 set pastetoggle=<F2>
@@ -60,4 +65,12 @@ map <C-l> <C-w>l
 
 nmap <silent> ,/ :nohlsearch<CR>
 
+set statusline=%<%F%h%m%r%h%w%{fugitive#statusline()}\ %=\ %04l;%02v\ %P
+set laststatus=2
+
+set wildmenu
+set wildignore=*.dll,*.o,*.obj,*.bak,*.exe,*.pyc,*,jpg,*.gif,*.png
+set wildmode=list:longest
+
+set guioptions-=T
 
