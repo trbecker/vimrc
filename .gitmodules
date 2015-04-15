@@ -10,6 +10,6 @@
 [submodule "bundle/vimtex"]
 	path = bundle/vimtex
 	url = https://github.com/lervag/vimtex.git
-[submodule "bundle/haskell-vim"]
-	path = bundle/haskell-vim
-	url = https://github.com/raichoo/haskell-vim.git
+[submodule "bundle/vim2hs"]
+	path = bundle/vim2hs
+	url = https://github.com/dag/vim2hs.git
