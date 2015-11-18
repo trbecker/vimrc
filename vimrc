@@ -7,8 +7,8 @@ let mapleader=","
 
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
-nmap <silent> ( :bn<CR>
-nmap <silent> ) :bp<CR>
+nmap <silent> ) :bn<CR>
+nmap <silent> ( :bp<CR>
 
 set hidden
 
@@ -34,7 +34,8 @@ set nobackup
 set noswapfile
 set t_Co=256
 set bs=2
-
+set colorcolumn=101
+set encoding=utf-8
 
 filetype on
 filetype plugin indent on

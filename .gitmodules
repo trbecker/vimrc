@@ -13,3 +13,9 @@
 [submodule "bundle/vim2hs"]
 	path = bundle/vim2hs
 	url = https://github.com/dag/vim2hs.git
+[submodule "bundle/minibufexpl"]
+	path = bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "bundle/robotframework"]
+	path = bundle/robotframework
+	url = https://github.com/mfukar/robotframework-vim.git
